@@ -36,7 +36,6 @@ body {
 video {
     opacity: 0.2;
     position: relative;
-    bottom: -600px;
 }
 
 @keyframes pacman {
@@ -60,14 +59,39 @@ video {
 
 
   /*ACA COLOCO MEDIAQUERIES*/
-@media screen and (min-width: 500px) and (max-width: 800px) {
+  @media screen and (min-width: 700px) and (max-width: 1100px) {
+    body {
+        background-color: rgb(51, 28, 82);
+    }
+    .fondo {
+        background-image: url(../images/2.png);
+        background-size: cover;
+        width: 800px;
+        height: 500px;
+        background-repeat: no-repeat;
+    }
+    @keyframes pacman {
+        0%  {top: 0px; left: 10px; rotate: 0deg;}
+        30% {top: 20px; left: 10px; rotate: 0deg;}
+        32% {rotate: 90deg;}
+        45% {left: 80px; top: 15px;}
+        50% {top: 221px; }
+        55% {top: 221px; left: 90px;}
+        57% {rotate: 0deg;}
+        60% {top: 221px; left: 120px;}
+    }
+}
+
+
+
+@media screen and (min-width: 500px) and (max-width: 700px) {
     body {
         background-color: rgb(0, 0, 0);
     }
     .fondo {
         background-image: url(../fonts/tablero2.jpg);
         background-size: cover;
-        width: 700px;
+        width: 600px;
         height: 100vh;
         background-repeat: no-repeat;
     
